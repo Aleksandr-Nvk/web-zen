@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: #10133C;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  text-align: center;
+  width: 100%;
+  max-width: 520px;
+  padding: 48px 32px;
+}
+
+.ext-icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 3px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+  white-space: nowrap;
+}
+
+.session-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.site-name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  word-break: break-all;
+}
+
+.session-text {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  transition: background 0.2s;
+}
+
+.circle.remaining {
+  background: #ffffff;
+}
+
+.circle.used {
+  background: transparent;
+}
+
+.streak {
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 36px;
+}
+
+.streak span {
+  color: #ffffff;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, opacity 0.2s;
+  letter-spacing: 0.2px;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-open {
+  background: #6067f9;
+  color: #fff;
+}
+
+.btn-open:hover {
+  background: #4f55d4;
+}
+
+.btn-open:disabled {
+  background: #2a2d5e;
+  color: #6a6da0;
+  cursor: not-allowed;
+}
+
+.btn-close {
+  background: rgba(96, 103, 249, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(96, 103, 249, 0.2);
+}
+
+.btn-close:hover {
+  background: rgba(96, 103, 249, 0.18);
+  color: #ffffff;
+}

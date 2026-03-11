@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Zen Settings</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1><img src="icons/icon48.png" alt="" class="title-icon" /> Web Zen</h1>
+
+    <section>
+      <label for="websites">Tracked hostnames <small>(one per line)</small></label>
+      <textarea id="websites" rows="6" placeholder="reddit.com&#10;twitter.com&#10;youtube.com"></textarea>
+    </section>
+
+    <section>
+      <label for="confirmMessage">Confirmation message</label>
+      <input type="text" id="confirmMessage" value="Is this important?" />
+    </section>
+
+    <section class="row">
+      <div>
+        <label for="sessionCount">Sessions per day</label>
+        <input type="number" id="sessionCount" min="1" max="100" value="3" />
+      </div>
+      <div>
+        <label for="sessionDuration">Duration</label>
+        <select id="sessionDuration">
+          <option value="0.1667">10 seconds</option>
+          <option value="0.5">30 seconds</option>
+          <option value="1">1 minute</option>
+          <option value="2">2 minutes</option>
+          <option value="5">5 minutes</option>
+          <option value="10">10 minutes</option>
+          <option value="15" selected>15 minutes</option>
+          <option value="20">20 minutes</option>
+          <option value="30">30 minutes</option>
+        </select>
+      </div>
+    </section>
+
+    <button id="save">Save settings</button>
+    <div id="status" class="status" hidden>Settings saved!</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

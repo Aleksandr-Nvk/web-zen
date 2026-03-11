@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Zen</title>
+  <link rel="stylesheet" href="confirm.css" />
+</head>
+<body>
+  <div class="page">
+    <img src="icons/icon128.png" alt="Web Zen" class="ext-icon" />
+
+    <h1 id="heading">Is this important?</h1>
+
+    <div class="session-row">
+      <span class="site-name" id="siteName"></span>
+      <span class="session-text" id="sessionText"></span>
+    </div>
+
+    <div id="circles" class="circles"></div>
+
+    <div class="streak" id="streak">
+      Streak: <span id="streakCount">0</span> days
+    </div>
+
+    <div class="actions">
+      <button id="openBtn" class="btn btn-open">Open (in 10s)</button>
+      <button id="closeBtn" class="btn btn-close">Close</button>
+    </div>
+  </div>
+
+  <script src="confirm.js"></script>
+</body>
+</html>
